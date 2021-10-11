@@ -1,0 +1,6 @@
+.idea/
+vendor/
+log
+.env
+composer.lock
+log/process-demo.pid

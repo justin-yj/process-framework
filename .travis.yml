@@ -1,0 +1,11 @@
+language: php
+php:
+  - 7.4
+before_script:
+  - mv .env.example .env
+  - composer install
+  - mkdir ./log
+script:
+  - php bin/process.php start
+  - php bin/process.php restart
+  - php bin/process.php stop
